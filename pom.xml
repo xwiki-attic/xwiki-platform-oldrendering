@@ -25,10 +25,11 @@
   <parent>
     <groupId>org.xwiki.platform</groupId>
     <artifactId>xwiki-platform-core</artifactId>
-    <version>8.0-SNAPSHOT</version>
+    <version>7.4</version>
   </parent>
   <artifactId>xwiki-platform-oldrendering</artifactId>
   <name>XWiki Platform - Old Rendering</name>
+  <version>7.4.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>XWiki Platform - Old Rendering</description>
   <properties>
@@ -40,7 +41,12 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-oldcore</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.xwiki.platform</groupId>
+      <artifactId>xwiki-platform-display-api</artifactId>
+      <version>${platform.version}</version>
     </dependency>
 
     <!-- Rendering -->
@@ -74,7 +80,7 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-oldcore</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -89,7 +95,7 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-rendering-macro-script</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -97,37 +103,37 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-rendering-macro-velocity</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-rendering-macro-groovy</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-xar</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-filter-instance-api</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-filter-instance-document</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-filter-stream-xar</artifactId>
-      <version>${project.version}</version>
+      <version>${platform.version}</version>
     </dependency>
 
     <!-- XWiki syntax parsers -->

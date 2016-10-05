@@ -1,4 +1,5 @@
 com.xpn.xwiki.internal.display.XWiki10DocumentContentDisplayer
+com.xpn.xwiki.internal.display.XWiki10DocumentTitleDisplayer
 com.xpn.xwiki.render.DefaultXWikiRenderingEngine
 com.xpn.xwiki.render.XWikiJSPRenderer
 com.xpn.xwiki.render.XWikiMacrosMappingRenderer
