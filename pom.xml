@@ -28,7 +28,7 @@
     <version>7.4</version>
   </parent>
   <artifactId>xwiki-platform-oldrendering</artifactId>
-  <name>XWiki Platform - Old Rendering</name>
+  <name>Old XWiki 1.0 syntax renderer</name>
   <version>7.5.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>XWiki Platform - Old Rendering</description>
