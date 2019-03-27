@@ -174,7 +174,7 @@ public class DefaultXWikiRenderingEngine implements XWikiRenderingEngine, Initia
             this.cache = this.cacheManager.createNewCache(configuration);
         } catch (CacheException e) {
             throw new XWikiException(XWikiException.MODULE_XWIKI_CACHE, XWikiException.ERROR_CACHE_INITIALIZING,
-                "Failed to create cache");
+                "Failed to create cache", e);
         }
     }
 
