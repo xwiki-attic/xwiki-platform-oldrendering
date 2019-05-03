@@ -166,7 +166,7 @@ public class DefaultXWikiRenderingEngine implements XWikiRenderingEngine, Initia
     {
         try {
             CacheConfiguration configuration = new CacheConfiguration();
-            configuration.setConfigurationId("xwiki.renderingcache");
+            configuration.setConfigurationId("xwiki.oldrenderingcache");
             LRUEvictionConfiguration lru = new LRUEvictionConfiguration();
             lru.setMaxEntries(iCapacity);
             configuration.put(LRUEvictionConfiguration.CONFIGURATIONID, lru);
