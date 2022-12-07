@@ -38,7 +38,9 @@ import org.xwiki.cache.CacheManager;
 import org.xwiki.cache.config.CacheConfiguration;
 import org.xwiki.cache.eviction.LRUEvictionConfiguration;
 import org.xwiki.component.annotation.Component;
+import org.xwiki.component.manager.ComponentLifecycleException;
 import org.xwiki.component.manager.ComponentManager;
+import org.xwiki.component.phase.Disposable;
 import org.xwiki.component.phase.Initializable;
 import org.xwiki.component.phase.InitializationException;
 import org.xwiki.configuration.ConfigurationSource;
@@ -54,7 +56,7 @@ import com.xpn.xwiki.web.XWikiRequest;
 
 @Component
 @Singleton
-public class DefaultXWikiRenderingEngine implements XWikiRenderingEngine, Initializable
+public class DefaultXWikiRenderingEngine implements XWikiRenderingEngine, Initializable, Disposable
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(XWikiRenderingEngine.class);
 
@@ -176,6 +178,12 @@ public class DefaultXWikiRenderingEngine implements XWikiRenderingEngine, Initia
             throw new XWikiException(XWikiException.MODULE_XWIKI_CACHE, XWikiException.ERROR_CACHE_INITIALIZING,
                 "Failed to create cache", e);
         }
+    }
+
+    @Override
+    public void dispose() throws ComponentLifecycleException
+    {
+        this.cache.dispose();
     }
 
     public Cache<XWikiRenderingCache> getCache()
