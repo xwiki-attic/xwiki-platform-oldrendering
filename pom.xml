@@ -29,7 +29,7 @@
   </parent>
   <artifactId>xwiki-platform-oldrendering</artifactId>
   <name>Old XWiki 1.0 syntax renderer</name>
-  <version>7.5.4</version>
+  <version>7.5.5-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>XWiki Platform - Old Rendering</description>
   <properties>
@@ -263,7 +263,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/xwiki-platform-oldrendering.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/xwiki-platform-oldrendering.git</developerConnection>
     <url>https://github.com/xwiki-contrib/xwiki-platform-oldrendering</url>
-    <tag>xwiki-platform-oldrendering-7.5.4</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <!-- Make sure the extension don't ends up with xwiki-commons issueManagement -->
